@@ -51,7 +51,7 @@ async def on_member_remove(member):
     await channel.send(f"{member} has left us. Get outa here bro.")
 
 @client.command()
-@commands.has_any_role("PERMZ", "God")
+@commands.has_permissions(administrator=True)
 async def clear(ctx, amount = 5):
     amount += 1
     await ctx.channel.purge(limit=amount)
@@ -63,7 +63,7 @@ async def kick(self, ctx, member: discord.Member, *, reason=None):
     await ctx.send(f'User {member} has been kicked')
 
 @client.command()
-@commands.has_any_role("PERMZ", "God")
+@commands.has_permissions(ban_members = True)
 async def ban(ctx, member : discord.Member, *, reason = None):
     await member.ban(reason=reason)
 
