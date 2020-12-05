@@ -18,7 +18,7 @@ async def ping(ctx):
 
 @client.command()
 async def talk(ctx):
-    await ctx.send(f"I do not serve any master.")
+    await ctx.send(f"I do not serve any master, type \'?\' to get a list of commands.")
 
 @client.command(aliases = ["8ball", "eightball"])
 async def _8ball(ctx, *, question):
