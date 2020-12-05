@@ -81,4 +81,4 @@ async def dice_roll(ctx, range_1 = 6):
 #    await ctx.send(f"{name} is {gay_rate}% gay.")
 
 
-client.run("Njk2NDczNTA1MzE0ODk3OTQw.XpZVfw.tZxUEwwCdkVD_y1eVsLPC8ITiu8")
+client.run("Njk2NDczNTA1MzE0ODk3OTQw.XopPfw.rl3qaCbxQXjD5ZfIyVfk5_K0pQQ")
