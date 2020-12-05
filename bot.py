@@ -3,6 +3,7 @@ import random
 from discord.ext import commands
 from random import randint
 
+
 import discord
 import logging
 
@@ -12,8 +13,16 @@ handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w'
 handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
 logger.addHandler(handler)
 
-client = commands.Bot(command_prefix = "mar ")
+client = commands.Bot(command_prefix = "*")
 
+@client.command()
+async def info(ctx):
+    InfoEmbed = discord.Embed(title="Hi! I'm the Gabriel Bot", 
+        description="I have many different functions.", 
+        color=0x00ff00)
+    InfoEmbed.set_thumbnail(url="https://i.pinimg.com/600x315/6b/47/05/6b47050f0f15b955cf725609749e1c87.jpg")
+    InfoEmbed.add_field(name="Commands", value="write commands here", inline=False)
+    await ctx.channel.send(embed=InfoEmbed)
 @client.event
 async def on_ready():
     print('Logged in as')
@@ -23,11 +32,8 @@ async def on_ready():
 
 @client.command()
 async def ping(ctx):
-    await ctx.send(f"Your's truly's bot ping is: {round(client.latency * 1000)} ms")
+    await ctx.channel.send(f"Your's truly's bot ping is: {round(client.latency * 1000)} ms")
 
-@client.command()
-async def talk(ctx):
-    await ctx.send(f"I do not serve any master, type \'?\' to get a list of commands.")
 
 @client.command(aliases = ["8ball", "eightball"])
 async def _8ball(ctx, *, question):
@@ -97,12 +103,12 @@ async def _pickup(ctx):
 @client.event
 async def on_member_join(member):
     channel = client.get_channel(680879232490274865)
-    await channel.send(f"{member} has just joined us. Welcome!")
+    await channel.channel.send(f"{member} has just joined us. Welcome!")
 
 @client.event
 async def on_member_remove(member):
     channel = client.get_channel(680879232490274865)
-    await channel.send(f"{member} has left us. Get outa here bro.")
+    await channel.channel.send(f"{member} has left us. Get outa here bro.")
 
 @client.command()
 @commands.has_permissions(administrator=True)
@@ -114,17 +120,23 @@ async def clear(ctx, amount = 5):
 @commands.has_permissions(kick_members=True)
 async def kick(self, ctx, member: discord.Member, *, reason=None):
     await member.kick(reason=reason)
-    await ctx.send(f'User {member} has been kicked')
+    await ctx.channel.send(f'User {member} has been kicked')
 
 @client.command()
 @commands.has_permissions(ban_members = True)
 async def ban(ctx, member : discord.Member, *, reason = None):
-    await member.ban(reason=reason)
+    await member.channel.ban(reason=reason)
 
 @client.command(aliases = ["diceroll", "rolldice"])
 async def dice_roll(ctx, range_1 = 6):
     result = randint(1, range_1)
     await ctx.send("The dice roll of d" + str(range_1) + " gave you a result of " + str(result))
+@client.command()
+async def slap(ctx, member: discord.Member, *, reason):
+    SlapEmbed = discord.Embed(
+        description=str(ctx.author) + " has slapped " + str(member) + " " + reason + "!", 
+        color=0x00ff00)
+    await ctx.channel.send(embed=SlapEmbed)
 
 #@client.command(aliases = ["gay", "howgay", "gaytest"])
 #async def gaytest(ctx, name):
