@@ -16,6 +16,10 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send(f"Your's truly's bot ping is: {round(client.latency * 1000)} ms")
 
+@client.command()
+async def talk(ctx):
+    await ctx.send(f"I do not serve any master.")
+
 @client.command(aliases = ["8ball", "eightball"])
 async def _8ball(ctx, *, question):
     responses = ["It is certain.", 
