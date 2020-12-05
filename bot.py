@@ -78,6 +78,7 @@ async def _pun(ctx):
 "What would you call a fish with a missing eye? A fsh, probably.",
 "What do you call a piece of toast at the zoo? Bread in captivity."
 ]
+    
     await ctx.send({random.choice(puns)})
 
 @client.command(aliases = ["pickup line", "Pickup line", "Pickup Line"])
