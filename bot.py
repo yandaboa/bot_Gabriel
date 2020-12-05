@@ -78,10 +78,13 @@ async def _pun(ctx):
 "What would you call a fish with a missing eye? A fsh, probably.",
 "What do you call a piece of toast at the zoo? Bread in captivity."
 ]
-    await ctx.send({random.choice(puns)})
+    PunsEmbed = discord.Embed(
+        description=random.choice(puns), 
+        color=0x4B0082)
+    await ctx.channel.send(embed = PunsEmbed)
 
-@client.command(aliases = ["pickup line", "Pickup line", "Pickup Line"])
-async def _pickup(ctx):
+@client.command()
+async def PickupLine(ctx):
     pickups =  ["Well, here I am. What are your other two wishes?",
 "Hey, my name's Micorsoft. Can I crash at your place tonight?",
 "Are you french? Because Eiffel for you.",
@@ -98,7 +101,12 @@ async def _pickup(ctx):
 "If you were a chicken, you'd be impeccable.",
 "I'm learning about important dates in history. Wanna be one of them?"
 ]
-    await ctx.send({random.choice(pickups)})
+    PickupsEmbed = discord.Embed(
+        description=random.choice(pickups), 
+        color=0xff00ff)
+    
+    await ctx.channel.send(embed = PickupsEmbed)
+    
 
 @client.event
 async def on_member_join(member):
@@ -135,7 +143,7 @@ async def dice_roll(ctx, range_1 = 6):
 async def slap(ctx, member: discord.Member, *, reason):
     SlapEmbed = discord.Embed(
         description=str(ctx.author) + " has slapped " + str(member) + " " + reason + "!", 
-        color=0x00ff00)
+        color=0xFF0000)
     await ctx.channel.send(embed=SlapEmbed)
 
 #@client.command(aliases = ["gay", "howgay", "gaytest"])
