@@ -118,3 +118,46 @@
 2020-12-05 11:16:23,942:DEBUG:discord.client: Dispatching event socket_raw_receive
 2020-12-05 11:16:23,943:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
 2020-12-05 11:16:23,943:DEBUG:discord.client: Dispatching event socket_response
+2020-12-05 11:17:05,098:DEBUG:discord.gateway: Keeping websocket alive with sequence 24.
+2020-12-05 11:17:05,099:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-12-05 11:17:05,189:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-12-05 11:17:05,189:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-12-05 11:17:05,189:DEBUG:discord.client: Dispatching event socket_response
+2020-12-05 11:17:46,350:DEBUG:discord.gateway: Keeping websocket alive with sequence 24.
+2020-12-05 11:17:46,352:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-12-05 11:17:46,449:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-12-05 11:17:46,449:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-12-05 11:17:46,449:DEBUG:discord.client: Dispatching event socket_response
+2020-12-05 11:18:22,456:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-12-05 11:18:22,457:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 25, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-12-05T19:19:51.980000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '784861618348490752', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['784549537133756426'], 'mute': False, 'joined_at': '2020-12-04T22:27:19.736000+00:00', 'hoisted_role': '784549537133756426', 'deaf': False}, 'id': '784861618944999444', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '*info', 'channel_id': '784546407461683245', 'author': {'username': 'vinniethepooh', 'public_flags': 0, 'id': '662338956687441921', 'discriminator': '2308', 'avatar': None}, 'attachments': [], 'guild_id': '784546407461683241'}}
+2020-12-05 11:18:22,457:DEBUG:discord.client: Dispatching event socket_response
+2020-12-05 11:18:22,457:DEBUG:discord.client: Dispatching event message
+2020-12-05 11:18:27,603:DEBUG:discord.gateway: Keeping websocket alive with sequence 25.
+2020-12-05 11:18:27,603:DEBUG:discord.client: Dispatching event socket_raw_send
+2020-12-05 11:18:27,694:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-12-05 11:18:27,694:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2020-12-05 11:18:27,694:DEBUG:discord.client: Dispatching event socket_response
+2020-12-05 11:18:42,660:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-12-05 11:18:42,660:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 26, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-12-05T19:20:12.196000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '784861703065042944', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['784549537133756426'], 'mute': False, 'joined_at': '2020-12-04T22:27:19.736000+00:00', 'hoisted_role': '784549537133756426', 'deaf': False}, 'id': '784861703736655902', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '*info', 'channel_id': '784546407461683245', 'author': {'username': 'vinniethepooh', 'public_flags': 0, 'id': '662338956687441921', 'discriminator': '2308', 'avatar': None}, 'attachments': [], 'guild_id': '784546407461683241'}}
+2020-12-05 11:18:42,660:DEBUG:discord.client: Dispatching event socket_response
+2020-12-05 11:18:42,661:DEBUG:discord.client: Dispatching event message
+2020-12-05 11:18:42,819:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-12-05 11:18:42,819:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 27, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-12-05T19:20:12.348000+00:00', 'referenced_message': None, 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['784549537133756426', '784550600410136627'], 'mute': False, 'joined_at': '2020-12-04T22:43:59.406000+00:00', 'hoisted_role': '784549537133756426', 'deaf': False}, 'id': '784861704374059028', 'flags': 0, 'embeds': [{'type': 'rich', 'title': "Hi! I'm the Gabriel Bot", 'thumbnail': {'width': 0, 'url': 'https://i.pinimg.com/600x315/6b/47/05/6b47050f0f15b955cf725609749e1c87.jpg', 'proxy_url': 'https://images-ext-2.discordapp.net/external/7qS7nSgJiZn9Bd3SJm510S8v6eNtJANWnIybrgqjsNI/https/i.pinimg.com/600x315/6b/47/05/6b47050f0f15b955cf725609749e1c87.jpg', 'height': 0}, 'fields': [{'value': '2', 'name': 'Commands', 'inline': False}], 'description': 'I have many different functions.', 'color': 65280}], 'edited_timestamp': None, 'content': '', 'channel_id': '784546407461683245', 'author': {'username': 'Gabriel Bot', 'public_flags': 0, 'id': '696473505314897940', 'discriminator': '0774', 'bot': True, 'avatar': '22e7c64daffbd9aee97348dd1e4aa5dd'}, 'attachments': [], 'guild_id': '784546407461683241'}}
+2020-12-05 11:18:42,819:DEBUG:discord.client: Dispatching event socket_response
+2020-12-05 11:18:42,820:DEBUG:discord.client: Dispatching event message
+2020-12-05 11:18:42,878:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-12-05 11:18:42,880:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_UPDATE', 's': 28, 'op': 0, 'd': {'id': '784861704374059028', 'embeds': [{'type': 'rich', 'title': "Hi! I'm the Gabriel Bot", 'thumbnail': {'width': 235, 'url': 'https://i.pinimg.com/600x315/6b/47/05/6b47050f0f15b955cf725609749e1c87.jpg', 'proxy_url': 'https://images-ext-2.discordapp.net/external/7qS7nSgJiZn9Bd3SJm510S8v6eNtJANWnIybrgqjsNI/https/i.pinimg.com/600x315/6b/47/05/6b47050f0f15b955cf725609749e1c87.jpg', 'height': 175}, 'fields': [{'value': '2', 'name': 'Commands', 'inline': False}], 'description': 'I have many different functions.', 'color': 65280}], 'channel_id': '784546407461683245', 'guild_id': '784546407461683241'}}
+2020-12-05 11:18:42,880:DEBUG:discord.client: Dispatching event socket_response
+2020-12-05 11:18:42,880:DEBUG:discord.client: Dispatching event raw_message_edit
+2020-12-05 11:18:42,881:DEBUG:discord.client: Dispatching event message_edit
+2020-12-05 11:18:46,164:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-12-05 11:18:46,165:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 29, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-12-05T19:20:15.710000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '784861717870936064', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['784549537133756426'], 'mute': False, 'joined_at': '2020-12-04T22:27:19.736000+00:00', 'hoisted_role': '784549537133756426', 'deaf': False}, 'id': '784861718475833344', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': 'there we go', 'channel_id': '784546407461683245', 'author': {'username': 'vinniethepooh', 'public_flags': 0, 'id': '662338956687441921', 'discriminator': '2308', 'avatar': None}, 'attachments': [], 'guild_id': '784546407461683241'}}
+2020-12-05 11:18:46,165:DEBUG:discord.client: Dispatching event socket_response
+2020-12-05 11:18:46,165:DEBUG:discord.client: Dispatching event message
+2020-12-05 11:18:48,268:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-12-05 11:18:48,268:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'TYPING_START', 's': 30, 'op': 0, 'd': {'user_id': '662338956687441921', 'timestamp': 1607196017, 'member': {'user': {'username': 'vinniethepooh', 'id': '662338956687441921', 'discriminator': '2308', 'avatar': None}, 'roles': ['784549537133756426'], 'mute': False, 'joined_at': '2020-12-04T22:27:19.736000+00:00', 'hoisted_role': '784549537133756426', 'deaf': False}, 'channel_id': '784546407461683245', 'guild_id': '784546407461683241'}}
+2020-12-05 11:18:48,268:DEBUG:discord.client: Dispatching event socket_response
+2020-12-05 11:18:49,508:DEBUG:discord.client: Dispatching event socket_raw_receive
+2020-12-05 11:18:49,509:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 31, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2020-12-05T19:20:18.980000+00:00', 'referenced_message': None, 'pinned': False, 'nonce': '784861731980574720', 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['784549537133756426'], 'mute': False, 'joined_at': '2020-12-04T22:27:19.736000+00:00', 'hoisted_role': '784549537133756426', 'deaf': False}, 'id': '784861732190683137', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': '*slap pidgeotto', 'channel_id': '784546407461683245', 'author': {'username': 'vinniethepooh', 'public_flags': 0, 'id': '662338956687441921', 'discriminator': '2308', 'avatar': None}, 'attachments': [], 'guild_id': '784546407461683241'}}
+2020-12-05 11:18:49,509:DEBUG:discord.client: Dispatching event socket_response
+2020-12-05 11:18:49,510:DEBUG:discord.client: Dispatching event message
