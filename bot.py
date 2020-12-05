@@ -94,7 +94,7 @@ async def _pickup(ctx):
 "I must be in a museum, because you truly are a work of art.",
 "Do you believe in love at first sight - or should I walk by again?",
 "I'm no photographer, but I can picture us together.",
-"Feel my shirt. Know what it's made of? Boyfriend material."
+"Feel my shirt. Know what it's made of? Boyfriend material.",
 "If you were a chicken, you'd be impeccable.",
 "I'm learning about important dates in history. Wanna be one of them?"
 ]
