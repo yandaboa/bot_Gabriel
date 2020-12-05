@@ -66,16 +66,16 @@ async def _pun(ctx):
     puns = ["I knew a woman who owned a taser. Man, she was stunning!",
 "I meant to look for my missing watch, but I could never find the time.",
 "Did you hear about that great new shovel? It's groundbreaking.",
-"The whiteboard is remarkable."
-"Inspecting mirrors is a job I could really see myself doing."
-"Two antennas got married last Saturday. The reception was fantastic."
-"Writing with a dull pencil is pointless."
-"The golfer brought an extra pair of pants in case he got a hole in one."
-"Why does Peter Pan fly all the time? He Neverlands."
-"I wondered why the baseball was getting bigger. Then it hit me."
-"I did a performance about puns. Really it was just a play on words."
-"What do you call an alligator in a vest? An investigator."
-"What would you call a fish with a missing eye? A fsh, probably."
+"The whiteboard is remarkable.",
+"Inspecting mirrors is a job I could really see myself doing.",
+"Two antennas got married last Saturday. The reception was fantastic.",
+"Writing with a dull pencil is pointless.",
+"The golfer brought an extra pair of pants in case he got a hole in one.",
+"Why does Peter Pan fly all the time? He Neverlands.",
+"I wondered why the baseball was getting bigger. Then it hit me.",
+"I did a performance about puns. Really it was just a play on words.",
+"What do you call an alligator in a vest? An investigator.",
+"What would you call a fish with a missing eye? A fsh, probably.",
 "What do you call a piece of toast at the zoo? Bread in captivity."
 ]
     await ctx.send({random.choice(puns)})
