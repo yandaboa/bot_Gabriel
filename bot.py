@@ -3,16 +3,6 @@ import random
 from discord.ext import commands
 from random import randint
 
-
-import discord
-import logging
-
-logger = logging.getLogger('discord')
-logger.setLevel(logging.DEBUG)
-handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
-handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
-logger.addHandler(handler)
-
 client = commands.Bot(command_prefix = "*")
 
 @client.command()
@@ -173,6 +163,48 @@ async def slap(ctx, member: discord.Member, *, reason):
         color=0xff8c00)
     await ctx.channel.send(embed=SlapEmbed)
 
+@client.command()
+async def slap(ctx, member: discord.Member, *, reason):
+    SlapEmbed = discord.Embed(
+        description=str(ctx.author) + " has slapped " + str(member) + " " + reason + "!", 
+        color=0xff8c00)
+    await ctx.channel.send(embed=SlapEmbed)
+
+@client.command(aliases = ["helpteach", "help learn"])
+async def learn(ctx):
+    InstructionEmbed = discord.Embed(
+        description="Enter the command \'teach\', with a parameter in the form of futurecommand_response. With this, you will be able to enter the command \'learned\' in the future and get the response. Example: *teach slap_ouch. \n \n *learned slap \n ouch. \n \n IMPORTANT: the futurecommand part can only be one word.", 
+        color=0x1520A6)
+    await ctx.channel.send(embed = InstructionEmbed)
+
+data = {"Place holder": "This is a placeholder for testing", "good":"bad"}
+
+def add(a, b):
+    data[a] = b
+
+def get(a):
+    if (a in data):
+        return data[a]
+    else :
+        return "command doesn't exist"
+
+names = []
+def getAliase(a):
+    for i in data.keys():
+        names.append(str(i))
+    return names
+
+@client.command()
+async def teach(ctx, lesson):
+    a = lesson.split("_")
+    add(a[0], a[1])
+    await ctx.channel.send(get(a[0]))
+    await ctx.channel.send(data.keys())
+
+@client.command(aliases = ["learnedcommand"])
+async def learned(ctx, learned):
+    await ctx.channel.send(get(learned))
+
 #@client.command(aliases = ["gay", "howgay", "gaytest"])
 #async def gaytest(ctx, name):
 #    if name == "vinniethepooh#2308" or name == "CHEWBACHY#0561"
@@ -180,6 +212,5 @@ async def slap(ctx, member: discord.Member, *, reason):
 #    else:
 #        gay_rate = randint(1, 100)
 #    await ctx.send(f"{name} is {gay_rate}% gay.")
-
 
 client.run("Njk2NDczNTA1MzE0ODk3OTQw.XopPfw.rl3qaCbxQXjD5ZfIyVfk5_K0pQQ")
