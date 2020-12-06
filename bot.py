@@ -106,6 +106,33 @@ async def PickupLine(ctx):
         color=0xff00ff)
     
     await ctx.channel.send(embed = PickupsEmbed)
+
+
+@client.command()
+async def Roast(ctx, *, member: discord.Member):
+    roasts = ["You're as useless as the ueue in queue.",
+"Mirrors can't talk. Lucky for you they can't laugh either.",
+"Hey, you have something on your chin. No, the third one.",
+"You're the reason the gene pool needs a lifeguard.",
+"If I had a face like yours, I'd sue my parents.",
+"Your only chance of getting laid is to crawl up a chicken's butt and wait.",
+"Some day you'll go far... and I hope you stay there.",
+"You must have been born on a highway, cuz that's where most accidents happen.",
+"If laughter is the best medicine, your face must be curing the world.",
+"I'm glad to see you're not letting your education get in the way of your ignorance.",
+"Is your ass jealous of the amount of shit that just came out of your mouth?",
+"So, a thought crossed your mind? Must have been a short trip.",
+"If I wanted to kill myself, I'd jump from your ego to your IQ.",
+"When I see your face, there's not a thing I would change... except the direction I was walking in.",
+"If I had a dollar for every time you said something smart, I'd be broke.",
+"When you were born, the doctor threw you out the window, but the window threw you back.",
+"I love what you've done with your hair. How do you get it to come out of the nostrils like that?"
+]
+    roastsEmbed = discord.Embed(
+        description=str(member) + ", " + random.choice(roasts),
+        color=0xFF0000)
+
+    await ctx.channel.send(embed = roastsEmbed)
     
 
 @client.event
@@ -143,7 +170,7 @@ async def dice_roll(ctx, range_1 = 6):
 async def slap(ctx, member: discord.Member, *, reason):
     SlapEmbed = discord.Embed(
         description=str(ctx.author) + " has slapped " + str(member) + " " + reason + "!", 
-        color=0xFF0000)
+        color=0xff8c00)
     await ctx.channel.send(embed=SlapEmbed)
 
 #@client.command(aliases = ["gay", "howgay", "gaytest"])
