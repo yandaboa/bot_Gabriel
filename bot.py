@@ -15,7 +15,10 @@ async def info(ctx):
         description="I have many different functions.", 
         color=0x00ff00)
     InfoEmbed.set_thumbnail(url="https://i.pinimg.com/600x315/6b/47/05/6b47050f0f15b955cf725609749e1c87.jpg")
-    InfoEmbed.add_field(name="Commands", value="write commands here", inline=False)
+    InfoEmbed.add_field(
+        name="Commands", 
+        value="*slap {member name} {reason}\n *pun\n *PickupLine\n *8ball {question}\n *diceroll", 
+        inline=True)
     await ctx.channel.send(embed=InfoEmbed)
 @client.event
 async def on_ready():
