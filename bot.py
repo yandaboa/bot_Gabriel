@@ -156,6 +156,12 @@ async def ban(ctx, member : discord.Member, *, reason = None):
 async def dice_roll(ctx, range_1 = 6):
     result = randint(1, range_1)
     await ctx.send("The dice roll of d" + str(range_1) + " gave you a result of " + str(result))
+@client.command()
+async def slap(ctx, member: discord.Member, *, reason):
+    SlapEmbed = discord.Embed(
+        description=str(ctx.author) + " has slapped " + str(member) + " " + reason + "!", 
+        color=0xff8c00)
+    await ctx.channel.send(embed=SlapEmbed)
 
 @client.command()
 async def slap(ctx, member: discord.Member, *, reason):
